@@ -22,6 +22,8 @@ function every(array, test) {
 
   // Using some method
   return !array.some((e) => !test(e));
+  // negating the inner test to check if any element fails the test(some returns true)
+  // some returns true means at least one element has failed the test so we negate to return if every element passed or not
 }
 
 console.log(every([1, 3, 5], (n) => n < 10));
