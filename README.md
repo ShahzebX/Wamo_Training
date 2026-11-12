@@ -1,2 +1,1 @@
-# mini-Jira
-A mini jira clone
+# Wamo_Training
