@@ -13,14 +13,15 @@ function every(array, test) {
   // Your code here.
 
   // Using loop
-  let every = true;
-  for (let i = 0; i < array.length; i++) {
-    every = every && test(array[i]);
-  }
+  //   let every = true;
+  //   for (let i = 0; i < array.length; i++) {
+  //     every = every && test(array[i]);
+  //   }
 
-  return every;
+  //   return every;
 
   // Using some method
+  return !array.some((e) => !test(e));
 }
 
 console.log(every([1, 3, 5], (n) => n < 10));
